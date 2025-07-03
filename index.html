@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tra Cứu Đơn Vị Hành Chính Tỉnh Đồng Nai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            background-image:
+                linear-gradient(to right, rgba(238, 242, 255, 0.8), rgba(238, 242, 255, 0.8)),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d4e3fc' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h4v-9H0v-1h4v-9H0v-1h4v-9H0v-1h4v-9H0v-1h4v-9H0v-1h4v-9H0v-1h4v-9H0v-1h4v-9H0v-1h4V0h1v4h9V0h1v4h9V0h1v4h9V0h1v4h9V0h1v4h9V0h1v4h9V0h1v4h9V0h1v4h9V0h1v4h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm-9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm-9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm-9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm-9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9z'/%3E%3Cpath d='M6 5V0h1v5h9V0h1v5h9V0h1v5h9V0h1v5h9V0h1v5h9V0h1v5h9V0h1v5h9V0h1v5h9V0h1v5h5v1h-5v9h5v1h-5v9h5v1h-5v9h5v1h-5v9h5v1h-5v9h5v1h-5v9h5v1h-5v9h5v1h-5v9h5v1h-5v5h-1v-5h-9v5h-1v-5h-9v5h-1v-5h-9v5h-1v-5h-9v5h-1v-5H0v-1h5v-9H0v-1h5v-9H0v-1h5v-9H0v-1h5v-9H0v-1h5v-9H0v-1h5v-9H0v-1h5v-9H0v-1h5V0h1v5h9V0h1v5h9V0h1v5h9V0h1v5h9V0h1v5h9V0h1v5h9V0h1v5h9V0h1v5h9V0h1v5z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .loader {
+            border: 4px solid #e5e7eb; /* gray-200 */
+            border-top: 4px solid #2563eb; /* blue-600 */
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1.5s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto p-4 md:p-6">
+        <!-- Header -->
+        <header class="text-center mb-6">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Logo_Dong_Nai.svg/150px-Logo_Dong_Nai.svg.png" 
+                 alt="Logo tỉnh Đồng Nai" 
+                 class="mx-auto h-20 md:h-24 w-auto mb-4 drop-shadow-md"
+                 onerror="this.style.display='none'">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-indigo-900">Tra Cứu Và Thống Kê Đơn Vị Hành Chính Tỉnh Đồng Nai</h1>
+            <p class="text-gray-600 mt-2 text-base">Hỗ trợ bạn tra cứu đơn vị hành chính sau sáp nhập của tỉnh Đồng Nai và tỉnh Bình Phước.</p>
+        </header>
+
+        <!-- Tab Navigation -->
+        <div class="mb-6 border-b border-gray-300">
+            <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="tabs-container" role="tablist">
+                <li class="mr-2" role="presentation">
+                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="tab-lookup" type="button" role="tab" aria-controls="lookup-content" aria-selected="true">Tra cứu sáp nhập</button>
+                </li>
+                <li class="mr-2" role="presentation">
+                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="tab-converter" type="button" role="tab" aria-controls="converter-content" aria-selected="false">Công cụ chuyển đổi địa chỉ</button>
+                </li>
+                <li class="mr-2" role="presentation">
+                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="tab-stats" type="button" role="tab" aria-controls="stats-content" aria-selected="false">Thống kê</button>
+                </li>
+                 <li class="mr-2" role="presentation">
+                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="tab-infographic" type="button" role="tab" aria-controls="infographic-content" aria-selected="false">Infographic</button>
+                </li>
+                <li class="mr-2" role="presentation">
+                    <button class="inline-block p-4 border-b-2 rounded-t-lg" id="tab-contribution" type="button" role="tab" aria-controls="contribution-content" aria-selected="false">Đóng góp thông tin</button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Tab Content -->
+        <div>
+            <!-- Lookup Tab Content -->
+            <div id="lookup-content" role="tabpanel" aria-labelledby="tab-lookup">
+                <!-- Content will be injected by JS -->
+            </div>
+
+            <!-- Converter Tab Content -->
+            <div id="converter-content" role="tabpanel" aria-labelledby="tab-converter" class="hidden">
+                 <!-- Content will be injected by JS -->
+            </div>
+            
+            <!-- Stats Tab Content -->
+            <div id="stats-content" role="tabpanel" aria-labelledby="tab-stats" class="hidden">
+                 <div class="bg-white/80 backdrop-blur-sm p-5 rounded-xl shadow-lg mb-8">
+                    <div class="flex flex-wrap gap-4 mb-4 items-center">
+                        <span class="font-medium text-gray-700">Sắp xếp theo:</span>
+                        <button id="sort-by-name" class="px-4 py-1 text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors" disabled>Tên</button>
+                        <button id="sort-by-area" class="px-4 py-1 text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors" disabled>Diện tích</button>
+                        <button id="sort-by-population" class="px-4 py-1 text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors" disabled>Dân số</button>
+                        <button id="sort-by-density" class="px-4 py-1 text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors" disabled>Mật độ</button>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th scope="col" class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">STT</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Phường/Xã</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Diện tích (km²)</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Dân số (người)</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Mật độ (người/km²)</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Được nhập từ</th>
+                                </tr>
+                            </thead>
+                            <tbody id="stats-table-body" class="bg-white divide-y divide-gray-200">
+                                <!-- Data rows will be injected here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="stats-initial-message" class="text-center p-8">
+                        <div class="loader"></div>
+                        <p class="text-gray-600">Đang tải dữ liệu thống kê...</p>
+                    </div>
+                 </div>
+            </div>
+
+             <!-- Infographic Tab Content -->
+            <div id="infographic-content" role="tabpanel" aria-labelledby="tab-infographic" class="hidden">
+                <div class="bg-white/80 backdrop-blur-sm p-5 rounded-xl shadow-lg">
+                    <h2 class="text-2xl font-bold text-indigo-800 mb-4 text-center">Infographic Hạ tầng Đồng Nai 2025</h2>
+                    <div class="overflow-hidden rounded-lg shadow-md">
+                        <img src="https://baodongnai.com.vn/file/e7837c02876411cd0187645a2551379f/072025/info_ha_tang_20250701223311.jpg" 
+                             alt="Infographic Hạ tầng Đồng Nai"
+                             class="w-full h-auto transition-transform duration-500 ease-in-out hover:scale-105"
+                             onerror="this.onerror=null; this.src='https://placehold.co/1200x800/e2e8f0/4a5568?text=Không+tải+được+ảnh';">
+                    </div>
+                    <p class="text-right text-sm text-gray-500 mt-2 italic">Nguồn: Báo Đồng Nai</p>
+                </div>
+            </div>
+
+            <!-- Contribution Tab Content -->
+            <div id="contribution-content" role="tabpanel" aria-labelledby="tab-contribution" class="hidden">
+                <div class="bg-white/80 backdrop-blur-sm p-5 rounded-xl shadow-lg">
+                    <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-4 mb-6 rounded-md" role="alert">
+                        <p class="font-bold">Góc chia sẻ:</p>
+                        <p>Để website cung cấp thông tin chính xác và kịp thời, bạn có thể chia sẻ cho tôi thêm thông tin mà bạn có bằng cách điền vào form dưới đây. Chân thành cám ơn</p>
+                    </div>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvXK6KhYkIznoudBRxgGkZq0bjUMSBBf54mCF7fPVwv_pnsQ/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="text-center p-6 mt-8 text-sm text-gray-500 border-t border-gray-200">
+        <p class="font-semibold text-gray-700">Copyright: Trang Hoàng</p>
+        <p>Phát triển với sự hỗ trợ của AI</p>
+    </footer>
+
+    <!-- Templates for Tab Content -->
+    <template id="lookup-template">
+        <div class="bg-white/80 backdrop-blur-sm p-5 rounded-xl shadow-lg mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 items-end">
+                <div class="lg:col-span-4">
+                    <label for="keyword-search" class="block text-sm font-medium text-gray-700 mb-1">Tìm theo từ khóa</label>
+                    <input type="text" id="keyword-search" placeholder="Nhập tên xã, phường, huyện..." class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow" disabled>
+                </div>
+                <div>
+                    <label for="tinhOld-select" class="block text-sm font-medium text-gray-700 mb-1">Tỉnh/TP Cũ</label>
+                    <select id="tinhOld-select" class="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow" disabled>
+                        <option value="">-- Tất cả Tỉnh/TP --</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="huyenOld-select" class="block text-sm font-medium text-gray-700 mb-1">Thành phố/Huyện Cũ</label>
+                    <select id="huyenOld-select" class="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow" disabled>
+                        <option value="">-- Tất cả Thành phố/Huyện --</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="xaOld-select" class="block text-sm font-medium text-gray-700 mb-1">Phường/Xã Cũ</label>
+                    <select id="xaOld-select" class="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow" disabled>
+                        <option value="">-- Tất cả Phường/Xã --</option>
+                    </select>
+                </div>
+                    <div>
+                    <button id="reset-button" class="w-full p-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow hover:shadow-lg" disabled>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 110 2H4a1 1 0 01-1-1V4a1 1 0 011-1zm10 8a1 1 0 011-1v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 011.885-.666A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101z" clip-rule="evenodd" /></svg>
+                        <span>Xóa lọc</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <main id="results-area" class="space-y-5">
+            <div id="initial-message" class="text-center p-8 bg-white rounded-xl shadow-md">
+                <div class="loader"></div>
+                <p class="text-gray-600">Đang tải dữ liệu, vui lòng chờ...</p>
+            </div>
+        </main>
+    </template>
+    <template id="converter-template">
+        <div class="bg-white/80 backdrop-blur-sm p-5 rounded-xl shadow-lg mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-end">
+                <div>
+                    <label for="conv-tinh-select" class="block text-sm font-medium text-gray-700 mb-1">Tỉnh/TP Cũ</label>
+                    <select id="conv-tinh-select" class="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow" disabled>
+                        <option value="">-- Chọn Tỉnh/TP --</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="conv-huyen-select" class="block text-sm font-medium text-gray-700 mb-1">Thành phố/Huyện Cũ</label>
+                    <select id="conv-huyen-select" class="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow" disabled>
+                        <option value="">-- Chọn Thành phố/Huyện --</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="conv-xa-select" class="block text-sm font-medium text-gray-700 mb-1">Phường/Xã Cũ</label>
+                    <select id="conv-xa-select" class="w-full p-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow" disabled>
+                        <option value="">-- Chọn Phường/Xã --</option>
+                    </select>
+                </div>
+                <div class="lg:col-span-3">
+                    <label for="street-input" class="block text-sm font-medium text-gray-700 mb-1">Số nhà, tên đường</label>
+                    <input type="text" id="street-input" placeholder="Ví dụ: 123 Nguyễn Ái Quốc" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow" disabled>
+                </div>
+            </div>
+            <div class="mt-6 text-center">
+                <button id="convert-button" class="px-8 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow hover:shadow-lg mx-auto" disabled>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" /></svg>
+                    <span>Chuyển đổi</span>
+                </button>
+            </div>
+            </div>
+            <div id="converter-result-area">
+            <!-- Conversion result will be shown here -->
+            </div>
+    </template>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- DOM Elements ---
+            const tabs = {
+                lookup: { btn: document.getElementById('tab-lookup'), content: document.getElementById('lookup-content') },
+                converter: { btn: document.getElementById('tab-converter'), content: document.getElementById('converter-content') },
+                stats: { btn: document.getElementById('tab-stats'), content: document.getElementById('stats-content') },
+                infographic: { btn: document.getElementById('tab-infographic'), content: document.getElementById('infographic-content') },
+                contribution: { btn: document.getElementById('tab-contribution'), content: document.getElementById('contribution-content') }
+            };
+            
+            // --- Google Sheet Config ---
+            const GOOGLE_SHEET_ID = '1JGdd3pHjnKYCU5oNVd6bFuN-8mkkJs4gc13PzUyCwr0';
+            const GOOGLE_SHEET_LOOKUP_URL = `https://docs.google.com/spreadsheets/d/${GOOGLE_SHEET_ID}/export?format=csv&gid=0`;
+            const THONGKE_SHEET_GID = '1540480730';
+            const GOOGLE_SHEET_STATS_URL = `https://docs.google.com/spreadsheets/d/${GOOGLE_SHEET_ID}/export?format=csv&gid=${THONGKE_SHEET_GID}`;
+
+            let allData = [];
+            let statsData = [];
+            
+            // --- Functions ---
+            async function loadAllData() {
+                // Inject HTML content from templates
+                document.getElementById('lookup-content').appendChild(document.getElementById('lookup-template').content.cloneNode(true));
+                document.getElementById('converter-content').appendChild(document.getElementById('converter-template').content.cloneNode(true));
+
+                // Re-assign DOM elements after injection
+                const elements = {
+                    keywordInput: document.getElementById('keyword-search'),
+                    tinhSelect: document.getElementById('tinhOld-select'),
+                    huyenSelect: document.getElementById('huyenOld-select'),
+                    xaSelect: document.getElementById('xaOld-select'),
+                    resultsArea: document.getElementById('results-area'),
+                    initialMessage: document.getElementById('initial-message'),
+                    resetButton: document.getElementById('reset-button'),
+                    convTinhSelect: document.getElementById('conv-tinh-select'),
+                    convHuyenSelect: document.getElementById('conv-huyen-select'),
+                    convXaSelect: document.getElementById('conv-xa-select'),
+                    streetInput: document.getElementById('street-input'),
+                    convertButton: document.getElementById('convert-button'),
+                    converterResultArea: document.getElementById('converter-result-area'),
+                    statsInitialMessage: document.getElementById('stats-initial-message'),
+                    sortByAreaBtn: document.getElementById('sort-by-area'),
+                    sortByPopulationBtn: document.getElementById('sort-by-population'),
+                    sortByNameBtn: document.getElementById('sort-by-name'),
+                    sortByDensityBtn: document.getElementById('sort-by-density'),
+                    statsTableBody: document.getElementById('stats-table-body')
+                };
+
+                const allInputs = Object.values(elements).filter(el => el && (el.tagName === 'INPUT' || el.tagName === 'SELECT' || el.tagName === 'BUTTON'));
+
+                try {
+                    const [lookupResponse, statsResponse] = await Promise.all([
+                        fetch(GOOGLE_SHEET_LOOKUP_URL),
+                        fetch(GOOGLE_SHEET_STATS_URL)
+                    ]);
+
+                    if (!lookupResponse.ok) throw new Error(`Lỗi tải dữ liệu tra cứu (Status: ${lookupResponse.status})`);
+                    
+                    const lookupCsv = await lookupResponse.text();
+                    allData = parseCSV(lookupCsv);
+                    
+                    if (allData.length === 0) throw new Error("Dữ liệu tra cứu rỗng hoặc có lỗi định dạng.");
+
+                    // Populate UI for lookup and converter
+                    populateFilters(elements.tinhSelect, allData);
+                    populateFilters(elements.convTinhSelect, allData);
+                    allInputs.forEach(input => input.disabled = false);
+                    elements.initialMessage.innerHTML = `<p class="text-gray-600">Vui lòng nhập từ khóa hoặc chọn bộ lọc để bắt đầu tra cứu.</p>`;
+                    performSearch(elements, allData);
+
+                    // Handle stats data
+                    if (statsResponse && statsResponse.ok) {
+                        const statsCsv = await statsResponse.text();
+                        statsData = parseCSV(statsCsv);
+                        if (statsData.length > 0) {
+                            elements.statsInitialMessage.style.display = 'none';
+                            displayStatsTable(elements, 'dienTich'); // Default sort by area
+                        } else {
+                           elements.statsInitialMessage.innerHTML = `<p class="text-red-600">Dữ liệu thống kê rỗng. Vui lòng kiểm tra lại sheet 'thongke'.</p>`;
+                        }
+                    } else {
+                         throw new Error(`Lỗi tải dữ liệu thống kê (Status: ${statsResponse ? statsResponse.status : 'N/A'}). Hãy chắc chắn GID của bạn là chính xác.`);
+                    }
+
+                    // Attach event listeners after elements are in the DOM
+                    attachEventListeners(elements);
+
+                } catch (error) {
+                    console.error('Lỗi khi tải dữ liệu từ Google Sheet:', error);
+                    const initialMessage = document.getElementById('initial-message');
+                    const statsInitialMessage = document.getElementById('stats-initial-message');
+                    if(initialMessage) initialMessage.innerHTML = `<div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded-md shadow-md" role="alert"><p class="font-bold">Không thể tải dữ liệu</p><p>${error.message}</p></div>`;
+                    if(statsInitialMessage) statsInitialMessage.innerHTML = `<div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded-md shadow-md" role="alert"><p class="font-bold">Không thể tải dữ liệu thống kê</p><p>${error.message}</p></div>`;
+                }
+            }
+            
+            function parseCSV(csvText) {
+                try {
+                    const lines = csvText.trim().split(/\r?\n/);
+                    if (lines.length < 2) return [];
+                    const headers = lines.shift().split(',').map(h => h.trim().replace(/^"|"$/g, ''));
+                    return lines.map(line => {
+                        const values = line.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g) || [];
+                        if (values.length > 0) {
+                            const obj = {};
+                            headers.forEach((header, i) => {
+                                obj[header] = (values[i] || '').trim().replace(/^"|"$/g, '');
+                            });
+                            return obj;
+                        }
+                        return null;
+                    }).filter(Boolean);
+                } catch (e) {
+                    console.error("Failed to parse CSV:", e);
+                    return [];
+                }
+            }
+
+            function cleanAndParseFloat(value) {
+                if (typeof value !== 'string' || !value) return 0;
+                const cleanValue = value.replace(/\./g, '').replace(',', '.');
+                return parseFloat(cleanValue) || 0;
+            }
+
+            function cleanAndParseInt(value) {
+                if (typeof value !== 'string' || !value) return 0;
+                const cleanValue = value.replace(/[^\d]/g, '');
+                return parseInt(cleanValue, 10) || 0;
+            }
+
+            function displayStatsTable(elements, sortBy) {
+                if (!statsData || statsData.length === 0) return;
+
+                const sortButtons = [elements.sortByAreaBtn, elements.sortByPopulationBtn, elements.sortByNameBtn, elements.sortByDensityBtn];
+                sortButtons.forEach(button => {
+                    button.classList.remove('bg-blue-600', 'text-white');
+                    button.classList.add('bg-gray-200', 'text-gray-700');
+                });
+                
+                let targetButton;
+                if (sortBy === 'dienTich') targetButton = elements.sortByAreaBtn;
+                else if (sortBy === 'danSo') targetButton = elements.sortByPopulationBtn;
+                else if (sortBy === 'matDo') targetButton = elements.sortByDensityBtn;
+                else if (sortBy === 'ten') targetButton = elements.sortByNameBtn;
+
+                if (targetButton) {
+                    targetButton.classList.remove('bg-gray-200', 'text-gray-700');
+                    targetButton.classList.add('bg-blue-600', 'text-white');
+                }
+                
+                // Sort data
+                const sortedData = [...statsData].sort((a, b) => {
+                    if (sortBy === 'ten') {
+                        const nameA = (a.xaNew || a.ten || '').replace(/^(Phường|Xã)\s*/, '');
+                        const nameB = (b.xaNew || b.ten || '').replace(/^(Phường|Xã)\s*/, '');
+                        return nameA.localeCompare(nameB, 'vi');
+                    }
+                    let valA, valB;
+                    if (sortBy === 'dienTich') {
+                        valA = cleanAndParseFloat(a.dienTich);
+                        valB = cleanAndParseFloat(b.dienTich);
+                    } else if (sortBy === 'danSo') {
+                        valA = cleanAndParseInt(a.danSo);
+                        valB = cleanAndParseInt(b.danSo);
+                    } else if (sortBy === 'matDo') {
+                        valA = cleanAndParseFloat(a.matDo);
+                        valB = cleanAndParseFloat(b.matDo);
+                    }
+                    return valB - valA; // Descending order for numbers
+                });
+
+                // Populate table
+                const tableBody = elements.statsTableBody;
+                tableBody.innerHTML = ''; // Clear previous rows
+
+                sortedData.forEach((item, index) => {
+                    const row = tableBody.insertRow();
+                    row.className = 'hover:bg-gray-50';
+                    
+                    const cellStt = row.insertCell();
+                    cellStt.className = 'px-4 py-4 whitespace-nowrap text-sm text-gray-500 text-center';
+                    cellStt.textContent = index + 1;
+
+                    const cellTen = row.insertCell();
+                    cellTen.className = 'px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900';
+                    cellTen.textContent = item.xaNew || item.ten || '';
+
+                    const cellDienTich = row.insertCell();
+                    cellDienTich.className = 'px-6 py-4 whitespace-nowrap text-sm text-gray-500';
+                    cellDienTich.textContent = cleanAndParseFloat(item.dienTich).toLocaleString('vi-VN');
+
+                    const cellDanSo = row.insertCell();
+                    cellDanSo.className = 'px-6 py-4 whitespace-nowrap text-sm text-gray-500';
+                    cellDanSo.textContent = cleanAndParseInt(item.danSo).toLocaleString('vi-VN');
+                    
+                    const cellMatDo = row.insertCell();
+                    cellMatDo.className = 'px-6 py-4 whitespace-nowrap text-sm text-gray-500';
+                    cellMatDo.textContent = cleanAndParseFloat(item.matDo).toLocaleString('vi-VN');
+
+                    const cellNhapTu = row.insertCell();
+                    cellNhapTu.className = 'px-6 py-4 text-sm text-gray-500 whitespace-normal';
+                    cellNhapTu.textContent = item.nhapTuxa || '';
+                });
+            }
+
+            function switchTab(targetTabBtn) {
+                Object.values(tabs).forEach(({ btn, content }) => {
+                    const isTarget = btn === targetTabBtn;
+                    btn.setAttribute('aria-selected', isTarget);
+                    btn.classList.toggle('border-blue-600', isTarget); btn.classList.toggle('text-blue-600', isTarget);
+                    btn.classList.toggle('border-transparent', !isTarget); btn.classList.toggle('text-gray-500', !isTarget);
+                    content.classList.toggle('hidden', !isTarget);
+                });
+            }
+            
+            function populateFilters(selectElement, data) {
+                if (!data || !selectElement) return;
+                const currentVal = selectElement.value;
+                const firstOptionHTML = selectElement.options[0].outerHTML;
+                selectElement.innerHTML = firstOptionHTML;
+                const items = [...new Set(data.map(item => item.tinhOld))].filter(Boolean).sort((a, b) => a.localeCompare(b, 'vi'));
+                items.forEach(item => selectElement.add(new Option(item, item)));
+                selectElement.value = currentVal;
+            }
+            
+            function updateDependentFilters(parentSelect, childSelect, grandChildSelect, key) {
+                const parentValue = parentSelect.value;
+                childSelect.innerHTML = `<option value="">-- ${childSelect.id.includes('conv') ? 'Chọn' : 'Tất cả'} Thành phố/Huyện --</option>`;
+                if (grandChildSelect) grandChildSelect.innerHTML = `<option value="">-- ${grandChildSelect.id.includes('conv') ? 'Chọn' : 'Tất cả'} Phường/Xã --</option>`;
+
+                if (parentValue) {
+                    const childItems = [...new Set(allData.filter(item => item.tinhOld === parentValue).map(item => item[key]))].filter(Boolean).sort((a, b) => a.localeCompare(b, 'vi'));
+                    childItems.forEach(item => childSelect.add(new Option(item, item)));
+                }
+            }
+            
+            function updateGrandChildFilter(tinhSelect, huyenSelect, xaSelect) {
+                 const tinhValue = tinhSelect.value;
+                 const huyenValue = huyenSelect.value;
+                 xaSelect.innerHTML = `<option value="">-- ${xaSelect.id.includes('conv') ? 'Chọn' : 'Tất cả'} Phường/Xã --</option>`;
+                 if(tinhValue && huyenValue) {
+                    const xaItems = [...new Set(allData.filter(item => item.tinhOld === tinhValue && item.huyenOld === huyenValue).map(item => item.xaOld))].filter(Boolean).sort((a, b) => a.localeCompare(b, 'vi'));
+                    xaItems.forEach(item => xaSelect.add(new Option(item, item)));
+                 }
+            }
+
+            function performSearch(elements, data) {
+                const keyword = elements.keywordInput.value.toLowerCase().trim();
+                const selectedTinh = elements.tinhSelect.value;
+                const selectedHuyen = elements.huyenSelect.value;
+                const selectedXa = elements.xaSelect.value;
+                
+                if (!keyword && !selectedTinh && !selectedHuyen && !selectedXa) {
+                     displayResults(elements, data);
+                    return;
+                }
+                let filteredData = data.filter(item => {
+                    const keywordMatch = !keyword || (item.xaOld && item.xaOld.toLowerCase().includes(keyword)) || (item.xaNew && item.xaNew.toLowerCase().includes(keyword)) || (item.huyenOld && item.huyenOld.toLowerCase().includes(keyword));
+                    const tinhMatch = !selectedTinh || item.tinhOld === selectedTinh;
+                    const huyenMatch = !selectedHuyen || item.huyenOld === selectedHuyen;
+                    const xaMatch = !selectedXa || item.xaOld === selectedXa;
+                    return keywordMatch && tinhMatch && huyenMatch && xaMatch;
+                });
+                displayResults(elements, filteredData);
+            }
+            
+            function displayResults(elements, data) {
+                elements.resultsArea.innerHTML = ''; 
+                if (data.length === 0) {
+                    elements.resultsArea.innerHTML = `<div class="text-center p-8 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg"><p class="font-semibold text-gray-700">Không tìm thấy kết quả</p><p class="text-gray-500 mt-1">Vui lòng thử lại với từ khóa hoặc bộ lọc khác.</p></div>`;
+                    return;
+                }
+                if (elements.initialMessage) elements.initialMessage.style.display = 'none';
+
+                const motCuaIconURL = 'https://cdn-icons-png.flaticon.com/512/4091/4091915.png';
+
+                data.forEach(item => {
+                    const resultCard = document.createElement('div');
+                    resultCard.className = 'bg-white p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1';
+                    const renderField = (label, value, icon) => `<div class="flex items-start gap-3"><div class="flex-shrink-0 w-5 h-5 text-blue-600">${icon}</div><p class="text-gray-700 flex-1"><strong class="font-semibold text-gray-800">${label}:</strong> <span class="break-words">${value || 'Chưa có thông tin'}</span></p></div>`;
+                    const mapIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>`;
+                    const buildingIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h6.375a.375.375 0 01.375.375v1.5a.375.375 0 01-.375.375H9a.375.375 0 01-.375-.375v-1.5A.375.375 0 019 6.75zM9 12.75h6.375a.375.375 0 01.375.375v1.5a.375.375 0 01-.375.375H9a.375.375 0 01-.375-.375v-1.5A.375.375 0 019 12.75z" /></svg>`;
+                    const officeIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /></svg>`;
+                    const phoneIcon = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg>`;
+                    const motCuaIcon = `<img src="${motCuaIconURL}" alt="Icon Một Cửa" class="w-5 h-5">`;
+
+                    resultCard.innerHTML = `<div class="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-4"><div class="space-y-3"><h3 class="text-lg font-bold text-indigo-800 border-b pb-2 mb-3 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>Đơn vị cũ</h3>${renderField('Phường/Xã', item.xaOld, mapIcon)}${renderField('Thành phố/Huyện', item.huyenOld, buildingIcon)}${renderField('Tỉnh/TP', item.tinhOld, officeIcon)}</div><div class="space-y-3 lg:border-l lg:pl-6 border-gray-200"><h3 class="text-lg font-bold text-sky-700 border-b pb-2 mb-3 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>Đơn vị mới</h3>${renderField('Phường/Xã', item.xaNew, mapIcon)}${renderField('Tỉnh/TP', item.tinhNew, officeIcon)}${renderField('Trụ sở mới', item.trusoNew, buildingIcon)}${renderField('Bộ phận Một cửa', item['1cua'], motCuaIcon)}${renderField('Điện thoại', item.phone, phoneIcon)}</div></div>`;
+                    elements.resultsArea.appendChild(resultCard);
+                });
+            }
+
+            function resetAll(elements) {
+                elements.keywordInput.value = '';
+                elements.tinhSelect.value = '';
+                elements.huyenSelect.innerHTML = '<option value="">-- Tất cả Thành phố/Huyện --</option>';
+                elements.xaSelect.innerHTML = '<option value="">-- Tất cả Phường/Xã --</option>';
+                performSearch(elements, allData);
+            }
+            
+            function handleAddressConversion(elements) {
+                const tinh = elements.convTinhSelect.value;
+                const huyen = elements.convHuyenSelect.value;
+                const xa = elements.convXaSelect.value;
+                const street = elements.streetInput.value.trim();
+
+                if(!tinh || !huyen || !xa) {
+                    elements.converterResultArea.innerHTML = `<div class="mt-4 text-center p-4 bg-yellow-100 text-yellow-800 rounded-lg"><p>Vui lòng chọn đầy đủ Tỉnh, Huyện, Xã cũ.</p></div>`;
+                    return;
+                }
+
+                const match = allData.find(item => item.tinhOld === tinh && item.huyenOld === huyen && item.xaOld === xa);
+
+                if(match) {
+                    const addressParts = [];
+                    if (street) addressParts.push(street);
+                    if (match.xaNew) addressParts.push(match.xaNew);
+                    if (match.tinhNew) addressParts.push(match.tinhNew);
+                    const newAddress = addressParts.join(', ');
+
+                    elements.converterResultArea.innerHTML = `<div class="mt-6 text-center p-5 bg-green-100 border-l-4 border-green-500 rounded-r-lg"><h3 class="font-bold text-lg text-green-800">Địa chỉ mới của bạn là:</h3><p class="mt-2 text-xl font-semibold text-gray-900 bg-white p-3 rounded-md shadow">${newAddress}</p></div>`;
+                } else {
+                    elements.converterResultArea.innerHTML = `<div class="mt-4 text-center p-4 bg-red-100 text-red-800 rounded-lg"><p>Không tìm thấy thông tin sáp nhập cho địa chỉ đã chọn. Địa chỉ có thể không thay đổi.</p></div>`;
+                }
+            }
+            
+            function attachEventListeners(elements) {
+                 // Lookup Tab
+                elements.keywordInput.addEventListener('input', () => performSearch(elements, allData));
+                elements.tinhSelect.addEventListener('change', () => updateDependentFilters(elements.tinhSelect, elements.huyenSelect, elements.xaSelect, 'huyenOld'));
+                elements.huyenSelect.addEventListener('change', () => updateGrandChildFilter(elements.tinhSelect, elements.huyenSelect, elements.xaSelect));
+                elements.xaSelect.addEventListener('change', () => performSearch(elements, allData));
+                elements.resetButton.addEventListener('click', () => resetAll(elements));
+
+                // Converter Tab
+                elements.convTinhSelect.addEventListener('change', () => updateDependentFilters(elements.convTinhSelect, elements.convHuyenSelect, elements.convXaSelect, 'huyenOld'));
+                elements.convHuyenSelect.addEventListener('change', () => updateGrandChildFilter(elements.convTinhSelect, elements.convHuyenSelect, elements.convXaSelect));
+                elements.convertButton.addEventListener('click', () => handleAddressConversion(elements));
+
+                // Stats Tab
+                elements.sortByAreaBtn.addEventListener('click', () => displayStatsTable(elements, 'dienTich'));
+                elements.sortByPopulationBtn.addEventListener('click', () => displayStatsTable(elements, 'danSo'));
+                elements.sortByNameBtn.addEventListener('click', () => displayStatsTable(elements, 'ten'));
+                elements.sortByDensityBtn.addEventListener('click', () => displayStatsTable(elements, 'matDo'));
+            }
+            
+            // --- INITIALIZATION ---
+            // Tab Switching
+            Object.values(tabs).forEach(({ btn }) => btn.addEventListener('click', () => switchTab(btn)));
+            
+            loadAllData();
+            switchTab(tabs.lookup.btn); // Set initial active tab
+        });
+    </script>
+</body>
+</html>
